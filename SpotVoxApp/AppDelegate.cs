@@ -10,6 +10,7 @@ namespace SpotVoxApp
 	{
 		// class-level declarations
 		private bool isauthenticated = false;
+		public User CurrentUser;
 
 		public override UIWindow Window {
 			get;
@@ -69,8 +70,16 @@ namespace SpotVoxApp
 
 		void LoginViewController_OnLoginSuccess (object sender, System.EventArgs e)
 		{
-			var tabBarController = GetViewController (MainStoryBoard, "MainTabBarController");
-			SetRootViewController (tabBarController, true);
+//			var appDelegate = UIApplication.SharedApplication.Delegate as AppDelegate;
+			var mainStoryBoard = MainStoryBoard;
+			var tabBarController = GetViewController(mainStoryBoard, "MainTabBarController");
+			ProfileViewController profileViewController = tabBarController.ChildViewControllers[1] as ProfileViewController;
+			profileViewController.CurrentUser = CurrentUser;
+			tabBarController.ChildViewControllers [1] = profileViewController;
+			SetRootViewController(tabBarController, true);
+
+//			var tabBarController = GetViewController (MainStoryBoard, "MainTabBarController");
+//			SetRootViewController (tabBarController, true);
 		}
 
 		public override void DidEnterBackground (UIApplication application)

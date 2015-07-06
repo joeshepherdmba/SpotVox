@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
@@ -132,7 +132,7 @@
                         <viewControllerLayoutGuide type="bottom" id="6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
@@ -255,7 +255,7 @@
                 <tabBarController definesPresentationContext="YES" id="158" sceneMemberID="viewController" storyboardIdentifier="MainTabBarController">
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="163">
-                        <rect key="frame" x="0.0" y="551" width="600" height="49"/>
+                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -276,7 +276,7 @@
                         <viewControllerLayoutGuide type="bottom" id="154"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="166">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -297,7 +297,7 @@
                         <viewControllerLayoutGuide type="bottom" id="156"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="170">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
@@ -327,7 +327,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="20" y="222" width="72.5" height="20.5"/>
                                 </variation>
                             </label>
@@ -337,7 +337,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="20" y="254.5" width="72.5" height="20.5"/>
                                 </variation>
                             </label>
@@ -361,6 +361,14 @@
                                     <rect key="frame" x="38" y="320.5" width="129" height="14.5"/>
                                 </variation>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="FullName" borderStyle="roundedRect" minimumFontSize="17" id="791" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="20" y="363" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="363" width="82" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <variation key="default">
                             <mask key="subviews">
@@ -369,6 +377,7 @@
                                 <exclude reference="353"/>
                                 <exclude reference="359"/>
                                 <exclude reference="203"/>
+                                <exclude reference="791"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="228"/>
@@ -388,6 +397,9 @@
                                 <exclude reference="587"/>
                                 <exclude reference="588"/>
                                 <exclude reference="601"/>
+                                <exclude reference="792"/>
+                                <exclude reference="793"/>
+                                <exclude reference="794"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -397,6 +409,7 @@
                                 <include reference="346"/>
                                 <include reference="353"/>
                                 <include reference="359"/>
+                                <include reference="791"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="228"/>
@@ -416,6 +429,9 @@
                                 <include reference="587"/>
                                 <include reference="588"/>
                                 <include reference="601"/>
+                                <include reference="792"/>
+                                <include reference="793"/>
+                                <include reference="794"/>
                             </mask>
                         </variation>
                         <constraints>
@@ -430,6 +446,9 @@
                             <constraint id="587" constant="30" firstItem="203" firstAttribute="top" secondItem="170" secondAttribute="top"/>
                             <constraint firstItem="205" firstAttribute="top" secondItem="203" secondAttribute="bottom" constant="22" id="588"/>
                             <constraint firstItem="203" firstAttribute="centerX" secondItem="170" secondAttribute="centerX" constant="0.0" id="601"/>
+                            <constraint firstItem="791" firstAttribute="leading" secondItem="170" secondAttribute="leading" constant="20" id="792"/>
+                            <constraint firstItem="791" firstAttribute="top" secondItem="359" secondAttribute="bottom" constant="28" id="793"/>
+                            <constraint firstItem="791" firstAttribute="width" secondItem="346" secondAttribute="width" id="794"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" id="171"/>
@@ -437,6 +456,9 @@
                         <outlet property="lblFullName" destination="205" id="name-outlet-205"/>
                         <outlet property="lblCity" destination="346" id="name-outlet-346"/>
                         <outlet property="tbProfile" destination="171" id="name-outlet-171"/>
+                        <outlet property="lblMemberSince" destination="353" id="name-outlet-353"/>
+                        <outlet property="lblBusinessesReferred" destination="359" id="name-outlet-359"/>
+                        <outlet property="txtFullName" destination="791" id="name-outlet-791"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="172" userLabel="First Responder" sceneMemberID="firstResponder"/>

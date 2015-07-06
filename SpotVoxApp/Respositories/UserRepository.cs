@@ -29,9 +29,6 @@ namespace SpotVoxApp
 		public async Task<User> LoginAsync (LoginViewModel loginViewModel)
 		{
 			client = clientFactory.CreateHttpClient ();
-//			client.BaseAddress = new Uri("http://spotvox.azurewebsites.net/");
-//			client.DefaultRequestHeaders.Accept.Clear();
-//			client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
 			HttpContent requestBody = new StringContent (string.Format ("grant_type=password&username={0}&password={1}", loginViewModel.Email, loginViewModel.Password));
 
@@ -54,24 +51,37 @@ namespace SpotVoxApp
 
 		public async Task<User> RegisterAsync (RegisterViewModel registerViewModel)
 		{
-			client = clientFactory.CreateHttpClient ();
+//			client = clientFactory.CreateHttpClient ();
 
-			string userJson = JsonConvert.SerializeObject (registerViewModel);
-			HttpResponseMessage response = await client.PostAsync("api/Account/Register", new StringContent(userJson, Encoding.UTF8, "application/json"));
+			HttpClient client = new HttpClient ();
+			client.BaseAddress = new Uri("http://spotvox.azurewebsites.net/");
+			client.DefaultRequestHeaders.Clear ();
+			client.DefaultRequestHeaders.Accept.Clear ();
+			client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-			if (response.IsSuccessStatusCode) {
-				string jsonMessage;
-				using (Stream responseStream = await response.Content.ReadAsStreamAsync ()) {
-					jsonMessage = new StreamReader (responseStream).ReadToEnd ();
+			using (client) {
+				
+				string userJson = JsonConvert.SerializeObject (registerViewModel);
+				HttpContent content = new StringContent (userJson, Encoding.UTF8, "application/json");
+				HttpResponseMessage response = await client.PostAsync ("api/account/register", content);
+
+				if (response.IsSuccessStatusCode) {
+					string jsonMessage;
+					using (Stream responseStream = await response.Content.ReadAsStreamAsync ()) {
+						jsonMessage = new StreamReader (responseStream).ReadToEnd ();
+					}
+
+					User user = (User)JsonConvert.DeserializeObject (jsonMessage, typeof(User));
+
+					LoginViewModel loginModel = new LoginViewModel ();
+					loginModel.Email = user.Email;
+					loginModel.Password = registerViewModel.Password;
+
+					user = await LoginAsync(loginModel);
+					return user;
+				} else {
+					return null;
 				}
-
-				tokenResponse = (TokenModel)JsonConvert.DeserializeObject (jsonMessage, typeof(TokenModel));
-				User user = new User ();
-				user = await GetUserByUserName(registerViewModel.Email);
-				user.UserAccessToken = tokenResponse;
-				return user;
-			} else {
-				return null;
 			}
 		}
 

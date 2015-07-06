@@ -52,7 +52,7 @@ namespace SpotVoxApp
 					ProfileViewController profileViewController = tabBarController.ChildViewControllers[1] as ProfileViewController;
 					profileViewController.CurrentUser = user;
 
-					appDelegate.SetRootViewController(tabBarController, true);
+					appDelegate.SetRootViewController(profileViewController, true);
 				}
 				else{
 					new UIAlertView("Registration Error", "Please try again", null, "OK", null);

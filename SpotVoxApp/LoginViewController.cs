@@ -49,6 +49,8 @@ namespace SpotVoxApp
 			{
 				if(OnLoginSuccess != null)
 				{
+					var appDelegate = UIApplication.SharedApplication.Delegate as AppDelegate;
+					appDelegate.CurrentUser = user;
 					OnLoginSuccess(sender, new EventArgs());
 				}
 				else{

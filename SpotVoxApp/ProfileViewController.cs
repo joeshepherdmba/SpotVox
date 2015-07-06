@@ -18,6 +18,8 @@ namespace SpotVoxApp
 		public override void ViewDidLoad()
 		{
 			base.ViewDidLoad ();
+			lblFullName.Text = CurrentUser.FullName;
+			lblCity.Text = CurrentUser.City;
 		}
 	}
 }
