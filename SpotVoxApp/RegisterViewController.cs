@@ -33,6 +33,7 @@ namespace SpotVoxApp
 			var g = new UITapGestureRecognizer (() => View.EndEditing (true));
 			View.AddGestureRecognizer (g);
 		}
+
 		async partial void btnCreateAccount_TouchUpInside (UIButton sender){
 			HttpClientFactory factory = new HttpClientFactory();
 			UserRepository repository = new UserRepository(factory);

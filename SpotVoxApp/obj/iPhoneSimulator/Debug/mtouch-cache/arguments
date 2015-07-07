@@ -27,17 +27,17 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
 	-r \
-	/Users/joeshepherd/SpotVox/packages/Xamarin.TestCloud.Agent.0.13.0/lib/Xamarin.iOS10/Calabash.dll \
-	-r \
-	/Users/joeshepherd/SpotVox/packages/Newtonsoft.Json.6.0.8/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll \
-	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Net.Http.dll \
+	-r \
+	/Users/joeshepherd/SpotVox/packages/Xamarin.TestCloud.Agent.0.14.1/lib/Xamarin.iOS10/Calabash.dll \
+	-r \
+	/Users/joeshepherd/SpotVox/packages/Newtonsoft.Json.7.0.1/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
 	-r \
-	/Users/joeshepherd/SpotVox/packages/Xamarin.TestCloud.Agent.0.13.0/lib/Xamarin.iOS10/Calabash.dll \
+	/Users/joeshepherd/SpotVox/packages/Xamarin.TestCloud.Agent.0.14.1/lib/Xamarin.iOS10/Calabash.dll \
 	-r \
-	/Users/joeshepherd/SpotVox/packages/Newtonsoft.Json.6.0.8/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll \
+	/Users/joeshepherd/SpotVox/packages/Newtonsoft.Json.7.0.1/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll \
 	/Users/joeshepherd/SpotVox/SpotVoxApp/bin/iPhoneSimulator/Debug//SpotVoxApp.exe \

@@ -16,6 +16,14 @@ namespace SpotVoxApp
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton btnEdit { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIImageView imgProfilePic { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UILabel lblBusinessesReferred { get; set; }
 
 		[Outlet]
@@ -32,6 +40,14 @@ namespace SpotVoxApp
 
 		void ReleaseDesignerOutlets ()
 		{
+			if (btnEdit != null) {
+				btnEdit.Dispose ();
+				btnEdit = null;
+			}
+			if (imgProfilePic != null) {
+				imgProfilePic.Dispose ();
+				imgProfilePic = null;
+			}
 			if (lblBusinessesReferred != null) {
 				lblBusinessesReferred.Dispose ();
 				lblBusinessesReferred = null;

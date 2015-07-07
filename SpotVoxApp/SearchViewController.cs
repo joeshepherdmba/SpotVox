@@ -24,6 +24,7 @@ namespace SpotVoxApp
 			map = new MKMapView(UIScreen.MainScreen.Bounds);
 			CLLocationManager locationManager = new CLLocationManager();
 			locationManager.RequestWhenInUseAuthorization();
+
 			map.ShowsUserLocation = true;
 
 			View = map;

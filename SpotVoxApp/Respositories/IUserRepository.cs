@@ -8,6 +8,7 @@ namespace SpotVoxApp
 		Task<User> LoginAsync (LoginViewModel loginViewModel);
 		Task<User> RegisterAsync (RegisterViewModel registerViewModel);
 		Task<User> GetUserByUserName (string userName);
+		Task<User> UpdateAsync (User user);
 	}
 }
 

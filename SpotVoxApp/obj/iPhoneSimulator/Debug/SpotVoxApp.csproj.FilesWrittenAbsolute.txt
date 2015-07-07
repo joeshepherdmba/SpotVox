@@ -59,3 +59,6 @@
 /Users/joeshepherd/SpotVox/SpotVoxApp/obj/iPhoneSimulator/Debug/SpotVoxApp.exe.mdb
 /Users/joeshepherd/SpotVox/SpotVoxApp/bin/iPhoneSimulator/Debug/Calabash.dll
 /Users/joeshepherd/SpotVox/SpotVoxApp/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
+/Users/joeshepherd/SpotVox/SpotVoxApp/obj/iPhoneSimulator/Debug/default profile picture.png
+/Users/joeshepherd/SpotVox/SpotVoxApp/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/877-view-878.nib
+/Users/joeshepherd/SpotVox/SpotVoxApp/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/UIViewController-877.nib

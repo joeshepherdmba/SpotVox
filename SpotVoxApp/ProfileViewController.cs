@@ -19,7 +19,18 @@ namespace SpotVoxApp
 		{
 			base.ViewDidLoad ();
 			lblFullName.Text = CurrentUser.FullName;
-			lblMemberSince.Text = "1/13/1976";
+			lblMemberSince.Text = CurrentUser.DateJoined.ToShortDateString();
+		}
+
+		public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
+		{
+			base.PrepareForSegue (segue, sender);
+
+			var editProfileViewController = segue.DestinationViewController as EditProfileViewController;
+
+			if (editProfileViewController != null) {
+				editProfileViewController.CurrentUser = this.CurrentUser;
+			}
 		}
 	}
 }

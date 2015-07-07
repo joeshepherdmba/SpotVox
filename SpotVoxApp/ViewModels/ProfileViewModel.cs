@@ -30,7 +30,6 @@ namespace SpotVoxApp
 			get;
 			set;
 		}
-
 	}
 }
 

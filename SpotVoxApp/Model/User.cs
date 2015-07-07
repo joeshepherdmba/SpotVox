@@ -71,6 +71,10 @@ namespace SpotVoxApp
 			get;
 			set;
 		}
+		public DateTime DateJoined {
+			get;
+			set;
+		}
 	}
 }
 

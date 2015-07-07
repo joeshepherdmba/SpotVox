@@ -85,6 +85,29 @@ namespace SpotVoxApp
 			}
 		}
 
+		public async Task<User> UpdateAsync (User user)
+		{
+			//Does not work. There is a security stamp field in the database that gets out of sync when using the UsersRepository to make these updates. Look at UserManager instead
+			HttpClientFactory factory = new HttpClientFactory(user.UserAccessToken);
+			client = factory.CreateHttpClient ();
+
+			string userJson = JsonConvert.SerializeObject (user);
+			HttpContent content = new StringContent (userJson, Encoding.UTF8, "application/json");
+			HttpResponseMessage response = await client.PutAsync (string.Format("api/users/{0}/", user.Email), content);
+
+			if (response.IsSuccessStatusCode) {
+				string jsonMessage;
+				using (Stream responseStream = await response.Content.ReadAsStreamAsync ()) {
+					jsonMessage = new StreamReader (responseStream).ReadToEnd ();
+				}
+
+				user = (User)JsonConvert.DeserializeObject (jsonMessage, typeof(User));
+				return user;
+			} else {
+				return null;
+			}
+
+		}
 
 		public async Task<User> GetUserByUserName (string userName)
 		{
