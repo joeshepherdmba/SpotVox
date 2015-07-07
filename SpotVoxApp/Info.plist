@@ -32,16 +32,28 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Resources/Images.xcassets/AppIcons.appiconset</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>MKDirectionsRequest</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.apple.maps.directionsrequest</string>
+			</array>
+		</dict>
+	</array>
+	<key>MKDirectionsApplicationSupportedModes</key>
+	<array>
+		<string>MKDirectionsModeCar</string>
+		<string>MKDirectionsModePedestrian</string>
+	</array>
 </dict>
 </plist>

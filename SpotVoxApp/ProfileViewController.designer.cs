@@ -20,10 +20,6 @@ namespace SpotVoxApp
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel lblCity { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
 		UILabel lblFullName { get; set; }
 
 		[Outlet]
@@ -34,19 +30,11 @@ namespace SpotVoxApp
 		[GeneratedCode ("iOS Designer", "1.0")]
 		UITabBarItem tbProfile { get; set; }
 
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UITextField txtFullName { get; set; }
-
 		void ReleaseDesignerOutlets ()
 		{
 			if (lblBusinessesReferred != null) {
 				lblBusinessesReferred.Dispose ();
 				lblBusinessesReferred = null;
-			}
-			if (lblCity != null) {
-				lblCity.Dispose ();
-				lblCity = null;
 			}
 			if (lblFullName != null) {
 				lblFullName.Dispose ();
@@ -59,10 +47,6 @@ namespace SpotVoxApp
 			if (tbProfile != null) {
 				tbProfile.Dispose ();
 				tbProfile = null;
-			}
-			if (txtFullName != null) {
-				txtFullName.Dispose ();
-				txtFullName = null;
 			}
 		}
 	}

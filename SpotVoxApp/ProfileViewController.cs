@@ -19,7 +19,7 @@ namespace SpotVoxApp
 		{
 			base.ViewDidLoad ();
 			lblFullName.Text = CurrentUser.FullName;
-			lblCity.Text = CurrentUser.City;
+			lblMemberSince.Text = "1/13/1976";
 		}
 	}
 }

@@ -327,18 +327,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <rect key="frame" x="20" y="222" width="72.5" height="20.5"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="City" lineBreakMode="tailTruncation" minimumFontSize="10" id="346" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="15" y="229" width="42" height="21"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="254.5" width="72.5" height="20.5"/>
                                 </variation>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Member Since: 1/1/2015" lineBreakMode="tailTruncation" minimumFontSize="10" id="353" translatesAutoresizingMaskIntoConstraints="NO">
@@ -348,7 +338,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="38" y="292" width="137.5" height="14.5"/>
+                                    <rect key="frame" x="34" y="249.5" width="137.5" height="14.5"/>
                                 </variation>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Businesses Referred: 0" lineBreakMode="tailTruncation" minimumFontSize="10" id="359" translatesAutoresizingMaskIntoConstraints="NO">
@@ -358,26 +348,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="38" y="320.5" width="129" height="14.5"/>
+                                    <rect key="frame" x="34" y="272" width="129" height="14.5"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="FullName" borderStyle="roundedRect" minimumFontSize="17" id="791" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
-                                <rect key="frame" x="20" y="363" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="20" y="363" width="82" height="30"/>
-                                </variation>
-                            </textField>
                         </subviews>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="205"/>
-                                <exclude reference="346"/>
                                 <exclude reference="353"/>
                                 <exclude reference="359"/>
                                 <exclude reference="203"/>
-                                <exclude reference="791"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="228"/>
@@ -385,31 +365,23 @@
                                 <exclude reference="304"/>
                                 <exclude reference="305"/>
                                 <exclude reference="500"/>
-                                <exclude reference="507"/>
-                                <exclude reference="508"/>
-                                <exclude reference="509"/>
-                                <exclude reference="510"/>
-                                <exclude reference="511"/>
-                                <exclude reference="566"/>
-                                <exclude reference="567"/>
                                 <exclude reference="582"/>
                                 <exclude reference="583"/>
                                 <exclude reference="587"/>
                                 <exclude reference="588"/>
                                 <exclude reference="601"/>
-                                <exclude reference="792"/>
-                                <exclude reference="793"/>
-                                <exclude reference="794"/>
+                                <exclude reference="828"/>
+                                <exclude reference="829"/>
+                                <exclude reference="830"/>
+                                <exclude reference="831"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="203"/>
                                 <include reference="205"/>
-                                <include reference="346"/>
                                 <include reference="353"/>
                                 <include reference="359"/>
-                                <include reference="791"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="228"/>
@@ -417,48 +389,34 @@
                                 <include reference="304"/>
                                 <include reference="305"/>
                                 <include reference="500"/>
-                                <include reference="507"/>
-                                <include reference="508"/>
-                                <include reference="509"/>
-                                <include reference="510"/>
-                                <include reference="511"/>
-                                <include reference="566"/>
-                                <include reference="567"/>
                                 <include reference="582"/>
                                 <include reference="583"/>
                                 <include reference="587"/>
                                 <include reference="588"/>
                                 <include reference="601"/>
-                                <include reference="792"/>
-                                <include reference="793"/>
-                                <include reference="794"/>
+                                <include reference="828"/>
+                                <include reference="829"/>
+                                <include reference="830"/>
+                                <include reference="831"/>
                             </mask>
                         </variation>
                         <constraints>
                             <constraint firstItem="205" firstAttribute="leading" secondItem="170" secondAttribute="leading" constant="20" id="500"/>
-                            <constraint firstItem="346" firstAttribute="leading" secondItem="170" secondAttribute="leading" constant="20" id="507"/>
-                            <constraint firstItem="353" firstAttribute="top" secondItem="346" secondAttribute="centerY" constant="27" id="508"/>
-                            <constraint firstItem="353" firstAttribute="leading" secondItem="170" secondAttribute="leading" constant="38" id="509"/>
-                            <constraint firstItem="359" firstAttribute="top" secondItem="353" secondAttribute="bottom" constant="14" id="510"/>
-                            <constraint firstItem="359" firstAttribute="leading" secondItem="170" secondAttribute="leading" constant="38" id="511"/>
-                            <constraint firstItem="346" firstAttribute="top" secondItem="205" secondAttribute="bottom" constant="12" id="566"/>
-                            <constraint firstItem="346" firstAttribute="width" secondItem="205" secondAttribute="width" id="567"/>
                             <constraint id="587" constant="30" firstItem="203" firstAttribute="top" secondItem="170" secondAttribute="top"/>
                             <constraint firstItem="205" firstAttribute="top" secondItem="203" secondAttribute="bottom" constant="22" id="588"/>
                             <constraint firstItem="203" firstAttribute="centerX" secondItem="170" secondAttribute="centerX" constant="0.0" id="601"/>
-                            <constraint firstItem="791" firstAttribute="leading" secondItem="170" secondAttribute="leading" constant="20" id="792"/>
-                            <constraint firstItem="791" firstAttribute="top" secondItem="359" secondAttribute="bottom" constant="28" id="793"/>
-                            <constraint firstItem="791" firstAttribute="width" secondItem="346" secondAttribute="width" id="794"/>
+                            <constraint firstItem="353" firstAttribute="top" secondItem="205" secondAttribute="bottom" constant="7" id="828"/>
+                            <constraint firstItem="353" firstAttribute="leading" secondItem="170" secondAttribute="leading" constant="34" id="829"/>
+                            <constraint firstItem="359" firstAttribute="top" secondItem="353" secondAttribute="bottom" constant="8" id="830"/>
+                            <constraint firstItem="359" firstAttribute="leading" secondItem="170" secondAttribute="leading" constant="34" id="831"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" id="171"/>
                     <connections>
                         <outlet property="lblFullName" destination="205" id="name-outlet-205"/>
-                        <outlet property="lblCity" destination="346" id="name-outlet-346"/>
                         <outlet property="tbProfile" destination="171" id="name-outlet-171"/>
                         <outlet property="lblMemberSince" destination="353" id="name-outlet-353"/>
                         <outlet property="lblBusinessesReferred" destination="359" id="name-outlet-359"/>
-                        <outlet property="txtFullName" destination="791" id="name-outlet-791"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="172" userLabel="First Responder" sceneMemberID="firstResponder"/>
