@@ -5,21 +5,18 @@ using UIKit;
 
 namespace SpotVoxApp
 {
-	partial class ProfileViewController : UIViewController
+	partial class ProfileViewController : BaseViewController
 	{
 		public ProfileViewController (IntPtr handle) : base (handle)
 		{
-			CurrentUser = new User ();
 		}
-		public User CurrentUser {
-			get;
-			set;
-		}
-		public override void ViewDidLoad()
+
+		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			lblFullName.Text = CurrentUser.FullName;
-			lblMemberSince.Text = CurrentUser.DateJoined.ToShortDateString();
+
+			this.lblFullName.Text = CurrentUser.FullName;
+			this.lblMemberSince.Text = CurrentUser.DateJoined.ToShortDateString ();
 		}
 
 		public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
@@ -27,10 +24,10 @@ namespace SpotVoxApp
 			base.PrepareForSegue (segue, sender);
 
 			var editProfileViewController = segue.DestinationViewController as EditProfileViewController;
-
 			if (editProfileViewController != null) {
 				editProfileViewController.CurrentUser = this.CurrentUser;
 			}
 		}
+
 	}
 }

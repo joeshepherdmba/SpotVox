@@ -20,6 +20,14 @@ namespace SpotVoxApp
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton btnUploadPhoto { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIImageView imgProfilePic { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UITextField txtEmail { get; set; }
 
 		[Outlet]
@@ -38,11 +46,23 @@ namespace SpotVoxApp
 		[GeneratedCode ("iOS Designer", "1.0")]
 		partial void btnSave_TouchUpInside (UIButton sender);
 
+		[Action ("btnUploadPhoto_TouchUpInside:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void btnUploadPhoto_TouchUpInside (UIButton sender);
+
 		void ReleaseDesignerOutlets ()
 		{
 			if (btnSave != null) {
 				btnSave.Dispose ();
 				btnSave = null;
+			}
+			if (btnUploadPhoto != null) {
+				btnUploadPhoto.Dispose ();
+				btnUploadPhoto = null;
+			}
+			if (imgProfilePic != null) {
+				imgProfilePic.Dispose ();
+				imgProfilePic = null;
 			}
 			if (txtEmail != null) {
 				txtEmail.Dispose ();

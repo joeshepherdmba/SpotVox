@@ -50,5 +50,10 @@
 			</array>
 		</dict>
 	</array>
+	<key>MKDirectionsApplicationSupportedModes</key>
+	<array>
+		<string>MKDirectionsModeCar</string>
+		<string>MKDirectionsModePedestrian</string>
+	</array>
 </dict>
 </plist>

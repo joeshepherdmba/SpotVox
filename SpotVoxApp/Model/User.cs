@@ -75,6 +75,10 @@ namespace SpotVoxApp
 			get;
 			set;
 		}
+		public string ProfilePicture {
+			get;
+			set;
+		}
 	}
 }
 

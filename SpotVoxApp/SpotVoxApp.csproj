@@ -113,16 +113,18 @@
     <Compile Include="SearchViewController.designer.cs">
       <DependentUpon>SearchViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProfileViewController.cs" />
-    <Compile Include="ProfileViewController.designer.cs">
-      <DependentUpon>ProfileViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="Model\Business.cs" />
     <Compile Include="Respositories\IBusinessRepository.cs" />
     <Compile Include="EditProfileViewController.cs" />
     <Compile Include="EditProfileViewController.designer.cs">
       <DependentUpon>EditProfileViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="BaseViewController.cs" />
+    <Compile Include="ProfileViewController.cs" />
+    <Compile Include="ProfileViewController.designer.cs">
+      <DependentUpon>ProfileViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageConverter.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -130,6 +132,7 @@
     <Folder Include="Respositories\" />
     <Folder Include="Model\" />
     <Folder Include="Factories\" />
+    <Folder Include="Common\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\default profile picture.png" />

@@ -62,3 +62,7 @@
 /Users/joeshepherd/SpotVox/SpotVoxApp/obj/iPhoneSimulator/Debug/default profile picture.png
 /Users/joeshepherd/SpotVox/SpotVoxApp/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/877-view-878.nib
 /Users/joeshepherd/SpotVox/SpotVoxApp/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/UIViewController-877.nib
+/Users/joeshepherd/SpotVox/SpotVoxApp/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/162-view-1571.nib
+/Users/joeshepherd/SpotVox/SpotVoxApp/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/EditProfileViewController.nib
+/Users/joeshepherd/SpotVox/SpotVoxApp/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/SearchViewController.nib
+/Users/joeshepherd/SpotVox/SpotVoxApp/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/2052-view-2053.nib

@@ -16,15 +16,7 @@ namespace SpotVoxApp
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UIButton btnEdit { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UIImageView imgProfilePic { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel lblBusinessesReferred { get; set; }
+		UIButton btnEditProfile { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
@@ -36,21 +28,13 @@ namespace SpotVoxApp
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UITabBarItem tbProfile { get; set; }
+		UILabel lblReferralsSent { get; set; }
 
 		void ReleaseDesignerOutlets ()
 		{
-			if (btnEdit != null) {
-				btnEdit.Dispose ();
-				btnEdit = null;
-			}
-			if (imgProfilePic != null) {
-				imgProfilePic.Dispose ();
-				imgProfilePic = null;
-			}
-			if (lblBusinessesReferred != null) {
-				lblBusinessesReferred.Dispose ();
-				lblBusinessesReferred = null;
+			if (btnEditProfile != null) {
+				btnEditProfile.Dispose ();
+				btnEditProfile = null;
 			}
 			if (lblFullName != null) {
 				lblFullName.Dispose ();
@@ -60,9 +44,9 @@ namespace SpotVoxApp
 				lblMemberSince.Dispose ();
 				lblMemberSince = null;
 			}
-			if (tbProfile != null) {
-				tbProfile.Dispose ();
-				tbProfile = null;
+			if (lblReferralsSent != null) {
+				lblReferralsSent.Dispose ();
+				lblReferralsSent = null;
 			}
 		}
 	}

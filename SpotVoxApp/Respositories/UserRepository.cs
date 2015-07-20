@@ -93,7 +93,7 @@ namespace SpotVoxApp
 
 			string userJson = JsonConvert.SerializeObject (user);
 			HttpContent content = new StringContent (userJson, Encoding.UTF8, "application/json");
-			HttpResponseMessage response = await client.PutAsync (string.Format("api/users/{0}/", user.Email), content);
+			HttpResponseMessage response = await client.PutAsync ("api/account/update/", content);
 
 			if (response.IsSuccessStatusCode) {
 				string jsonMessage;
